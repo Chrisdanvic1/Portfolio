@@ -11,6 +11,10 @@ html {
   scroll-padding-top: 80px;
 }
 
+#skills {
+  scroll-padding-top: 1200px;
+}
+
 body {
   background: black;
   color: hsl(0, 0%, 80%);
@@ -28,7 +32,7 @@ header {
   backdrop-filter: blur(10px);
   top: 0;
   justify-content: space-between;
-  padding: min(2em, 8%);
+  padding: min(1em, 8%);
   padding-left: min(3em, 8%);
   padding-right: min(3em, 8%);
   font-size: clamp(1rem, 2vw, 1.7rem);
@@ -200,6 +204,23 @@ button:active {
   text-align: center;
   color: white;
   font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  /* display: inline-block; */
+  padding-bottom: 15px;
+}
+
+.about1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(to right, #4d56ec, #be08e7);
+  border-radius: 2px;
 }
 
 .about2 {
@@ -275,11 +296,24 @@ button:active {
 #skills {
   margin-top: 12%;
   margin-bottom: 12%;
+
+  @media (max-width: 620px) {
+    margin-top: 30%;
+  }
+}
+
+.align {
+  text-align: center;
 }
 
 #skills p {
   text-align: center;
   font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  /* display: inline-block; */
+  padding-bottom: 15px;
 }
 
 .skillsdiv {
@@ -496,6 +530,17 @@ button:active {
   border-radius: 2px;
 }
 
+#skillsp::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(to right, #4d56ec, #be08e7);
+  border-radius: 2px;
+}
 .section-subheading {
   font-size: clamp(0.85rem, 2vw, 1.1rem);
   color: hsl(0, 0%, 60%);
